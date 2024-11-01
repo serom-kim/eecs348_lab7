@@ -66,8 +66,8 @@ public:
       x += (data[i][i]);
     }
     for (int j = 0; j < SIZE; j++) {
-      y += (data[j][j]);
-    }
+      y += (data[j][SIZE-i-1]);
+    } 
     return x + y;
   };
 
